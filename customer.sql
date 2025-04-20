@@ -47,7 +47,7 @@ insert into item VALUES
 select * from customer;
 select * from Item;
 
-select count(*),loc
+select sum(bamt),loc
 from customer
-group by loc;
-
+group by loc
+order by bamt desc;
